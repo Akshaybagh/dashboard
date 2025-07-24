@@ -1,0 +1,59 @@
+<app-navbar></app-navbar>
+
+<div class="container mt-4">
+  <!-- Row: Pie and Line Charts -->
+  <div class="row g-4">
+    <!-- Pie Chart -->
+    <div class="col-md-6">
+      <div class="card h-100">
+        <div class="card-body">
+          <h5 class="card-title text-center">Source-wise Consumption</h5>
+          <div style="height: 300px;">
+            <canvas baseChart
+                    [data]="sourceDistributionData"
+                    [type]="'pie'"
+                    [options]="chartOptions">
+            </canvas>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Line Chart -->
+    <div class="col-md-6">
+      <div class="card h-100">
+        <div class="card-body">
+          <h5 class="card-title text-center">Monthly Trend</h5>
+          <div style="height: 300px;">
+            <canvas baseChart
+                    [data]="monthlyTrendData"
+                    [type]="'line'"
+                    [options]="chartOptions">
+            </canvas>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Row: Bar Chart -->
+  <div class="row mt-4">
+    <div class="col-12">
+      <div class="card h-100">
+        <div class="card-body">
+          <h5 class="card-title text-center">Location-wise Consumption</h5>
+          <div style="height: 400px;">
+            <canvas baseChart
+                    [data]="locationWiseData"
+                    [type]="'bar'"
+                    [options]="chartOptions">
+            </canvas>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<router-outlet></router-outlet>
+

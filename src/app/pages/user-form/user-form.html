@@ -1,0 +1,65 @@
+<app-navbar></app-navbar>
+
+<div class="container mt-4">
+  <div class="card shadow-sm">
+    <div class="card-body">
+      <h2 class="mb-4">{{ isEdit ? 'Edit User' : 'Add User' }}</h2>
+
+      <form (ngSubmit)="saveUser()" #userForm="ngForm">
+        <div class="mb-3">
+          <label for="name" class="form-label">Name</label>
+          <input
+            type="text"
+            id="name"
+            class="form-control"
+            [(ngModel)]="user.name"
+            name="name"
+            required />
+        </div>
+
+        <div class="mb-3">
+          <label for="mobile" class="form-label">Mobile</label>
+          <input
+            type="text"
+            id="mobile"
+            class="form-control"
+            [(ngModel)]="user.mobile"
+            name="mobile"
+            required />
+        </div>
+
+        <div class="mb-3">
+          <label for="userType" class="form-label">User Type</label>
+          <select
+            id="userType"
+            class="form-select"
+            [(ngModel)]="user.userType"
+            name="userType"
+            required>
+            <option value="user">User</option>
+            <option value="admin">Admin</option>
+          </select>
+        </div>
+
+        <div class="mb-3">
+          <label for="status" class="form-label">Status</label>
+          <select
+            id="status"
+            class="form-select"
+            [(ngModel)]="user.status"
+            name="status"
+            required>
+            <option value="active">Active</option>
+            <option value="inactive">Inactive</option>
+          </select>
+        </div>
+
+        <button
+          type="submit"
+          class="btn btn-success">
+          {{ isEdit ? 'Update' : 'Add' }} User
+        </button>
+      </form>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,48 @@
+<!-- <div class="navbar bg-base-100 shadow-md px-4">
+  <div class="flex-1">
+    <a class="btn btn-ghost normal-case text-xl" routerLink="/home">Dashboard</a>
+  </div>
+  <div class="flex-1">
+    <a class="btn btn-ghost normal-case text-xl" routerLink="/users">User List</a> |
+    <a class="btn btn-ghost normal-case text-xl" routerLink="/users/add">Add User</a>
+  </div>
+ 
+
+  <div class="flex-none">
+    <button class="btn btn-outline btn-error" (click)="logout()">
+      Logout
+    </button>
+  </div>
+</div>
+<router-outlet></router-outlet> -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light shadow px-4">
+  <div class="container-fluid">
+    <a class="navbar-brand" routerLink="/dashboard">Dashboard</a>
+
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#navbarNav"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/users">User List</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/users/add">Add User</a>
+        </li>
+      </ul>
+
+      <button class="btn btn-outline-danger" (click)="logout()">
+        Logout
+      </button>
+    </div>
+  </div>
+</nav>
+
+<router-outlet></router-outlet>
