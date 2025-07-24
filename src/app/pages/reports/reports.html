@@ -1,0 +1,24 @@
+<app-navbar></app-navbar>
+<div class="p-4">
+  <h2 class="text-xl font-bold mb-4">Report Data</h2>
+  <table class="table-auto w-full border-collapse border border-gray-300">
+    <thead class="bg-green-100">
+      <tr>
+        <th class="border px-4 py-2">ID</th>
+        <th class="border px-4 py-2">Amount</th>
+        <th class="border px-4 py-2">Date</th>
+        <th class="border px-4 py-2">Source</th>
+        <th class="border px-4 py-2">Location</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let report of reports">
+        <td class="border px-4 py-2">{{ report.id }}</td>
+        <td class="border px-4 py-2">{{ report.amount }}</td>
+        <td class="border px-4 py-2">{{ report.date }}</td>
+        <td class="border px-4 py-2">{{ report.source }}</td>
+        <td class="border px-4 py-2">{{ report.location }}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>

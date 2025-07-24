@@ -1,6 +1,6 @@
 [
   {
-    "id": "05896536",
+    "id": 5896536,
     "name": "Jayashree Das",
     "mobile": "4826586520",
     "userType": "admin",
@@ -8,7 +8,7 @@
     "email": "jd@example.com"
   },
   {
-    "id": "04129376",
+    "id": 4129376,
     "name": "Manisha Barik",
     "mobile": "8723614729",
     "userType": "user",
@@ -16,7 +16,7 @@
     "email": "manisha@example.com"
   },
   {
-    "id": "02471539",
+    "id": 2471539,
     "name": "Soumya",
     "mobile": "9418273641",
     "userType": "manager",
@@ -24,7 +24,7 @@
     "email": "soumya@example.com"
   },
   {
-    "id": "07682417",
+    "id": 7682417,
     "name": "Akshaya",
     "mobile": "7893641284",
     "userType": "admin",
@@ -32,7 +32,7 @@
     "email": "akshaya@example.com"
   },
   {
-    "id": "03476215",
+    "id": 3476215,
     "name": "Liam Wright",
     "mobile": "9823746153",
     "userType": "user",
@@ -40,7 +40,7 @@
     "email": "liam.wright@example.com"
   },
   {
-    "id": "09361725",
+    "id": 9361725,
     "name": "Emma Hughes",
     "mobile": "7632149850",
     "userType": "admin",
@@ -48,7 +48,7 @@
     "email": "emma.hughes@example.com"
   },
   {
-    "id": "04816532",
+    "id": 4816532,
     "name": "Noah Foster",
     "mobile": "9128746540",
     "userType": "user",
@@ -56,7 +56,7 @@
     "email": "noah.foster@example.com"
   },
   {
-    "id": "05736284",
+    "id": 5736284,
     "name": "Ava Morgan",
     "mobile": "8491637542",
     "userType": "admin",
@@ -64,7 +64,7 @@
     "email": "ava.morgan@example.com"
   },
   {
-    "id": "02948173",
+    "id": 2948173,
     "name": "Elijah Hall",
     "mobile": "7381926405",
     "userType": "user",
@@ -72,7 +72,7 @@
     "email": "elijah.hall@example.com"
   },
   {
-    "id": "06543281",
+    "id": 6543281,
     "name": "Isabella Young",
     "mobile": "9678324501",
     "userType": "admin",
@@ -80,11 +80,291 @@
     "email": "isabella.young@example.com"
   },
   {
-    "id": "01384652",
+    "id": 1384652,
     "name": "Lucas King",
     "mobile": "8961745283",
     "userType": "user",
     "status": "active",
     "email": "lucas.king@example.com"
+  },
+  {
+    "id": 8763124,
+    "name": "Mia Scott",
+    "mobile": "7841236985",
+    "userType": "admin",
+    "status": "inactive",
+    "email": "mia.scott@example.com"
+  },
+  {
+    "id": 3826495,
+    "name": "James Ward",
+    "mobile": "9812736450",
+    "userType": "user",
+    "status": "active",
+    "email": "james.ward@example.com"
+  },
+  {
+    "id": 2619834,
+    "name": "Amelia Green",
+    "mobile": "8213749506",
+    "userType": "admin",
+    "status": "active",
+    "email": "amelia.green@example.com"
+  },
+  {
+    "id": 7948163,
+    "name": "Benjamin Baker",
+    "mobile": "7491638204",
+    "userType": "user",
+    "status": "inactive",
+    "email": "benjamin.baker@example.com"
+  },
+  {
+    "id": 4563719,
+    "name": "Charlotte Adams",
+    "mobile": "9872316540",
+    "userType": "admin",
+    "status": "active",
+    "email": "charlotte.adams@example.com"
+  },
+  {
+    "id": 3284175,
+    "name": "Henry Carter",
+    "mobile": "7623419805",
+    "userType": "user",
+    "status": "inactive",
+    "email": "henry.carter@example.com"
+  },
+  {
+    "id": 5824619,
+    "name": "Evelyn Phillips",
+    "mobile": "9182745630",
+    "userType": "admin",
+    "status": "active",
+    "email": "evelyn.phillips@example.com"
+  },
+  {
+    "id": 6843172,
+    "name": "Alexander Mitchell",
+    "mobile": "8492163748",
+    "userType": "user",
+    "status": "active",
+    "email": "alexander.mitchell@example.com"
+  },
+  {
+    "id": 7192436,
+    "name": "Harper Turner",
+    "mobile": "9812374062",
+    "userType": "admin",
+    "status": "inactive",
+    "email": "harper.turner@example.com"
+  },
+  {
+    "id": 3648192,
+    "name": "Jack Parker",
+    "mobile": "7849216305",
+    "userType": "user",
+    "status": "active",
+    "email": "jack.parker@example.com"
+  },
+  {
+    "id": 4298176,
+    "name": "Abigail Evans",
+    "mobile": "8962317456",
+    "userType": "admin",
+    "status": "inactive",
+    "email": "abigail.evans@example.com"
+  },
+  {
+    "id": 2567139,
+    "name": "Daniel Edwards",
+    "mobile": "9832417850",
+    "userType": "user",
+    "status": "active",
+    "email": "daniel.edwards@example.com"
+  },
+  {
+    "id": 9182736,
+    "name": "Emily Collins",
+    "mobile": "7812639451",
+    "userType": "admin",
+    "status": "active",
+    "email": "emily.collins@example.com"
+  },
+  {
+    "id": 6271384,
+    "name": "Logan Morris",
+    "mobile": "9172836450",
+    "userType": "user",
+    "status": "inactive",
+    "email": "logan.morris@example.com"
+  },
+  {
+    "id": 8013492,
+    "name": "Grace Reed",
+    "mobile": "8623749510",
+    "userType": "admin",
+    "status": "inactive",
+    "email": "grace.reed@example.com"
+  },
+  {
+    "id": 5371826,
+    "name": "Sebastian Cook",
+    "mobile": "7941823605",
+    "userType": "user",
+    "status": "active",
+    "email": "sebastian.cook@example.com"
+  },
+  {
+    "id": 4781392,
+    "name": "Chloe Murphy",
+    "mobile": "9741638205",
+    "userType": "admin",
+    "status": "active",
+    "email": "chloe.murphy@example.com"
+  },
+  {
+    "id": 5931847,
+    "name": "Matthew Bell",
+    "mobile": "9283746501",
+    "userType": "user",
+    "status": "inactive",
+    "email": "matthew.bell@example.com"
+  },
+  {
+    "id": 2874639,
+    "name": "Ella Bailey",
+    "mobile": "8723945610",
+    "userType": "admin",
+    "status": "active",
+    "email": "ella.bailey@example.com"
+  },
+  {
+    "id": 7018246,
+    "name": "David Rivera",
+    "mobile": "7632951840",
+    "userType": "user",
+    "status": "inactive",
+    "email": "david.rivera@example.com"
+  },
+  {
+    "id": 3126785,
+    "name": "Scarlett Cooper",
+    "mobile": "9152387640",
+    "userType": "admin",
+    "status": "active",
+    "email": "scarlett.cooper@example.com"
+  },
+  {
+    "id": 6617392,
+    "name": "Samuel Richardson",
+    "mobile": "9841763250",
+    "userType": "user",
+    "status": "inactive",
+    "email": "samuel.richardson@example.com"
+  },
+  {
+    "id": 9284361,
+    "name": "Victoria Cox",
+    "mobile": "8731546290",
+    "userType": "admin",
+    "status": "active",
+    "email": "victoria.cox@example.com"
+  },
+  {
+    "id": 1592743,
+    "name": "Wyatt Howard",
+    "mobile": "7418269305",
+    "userType": "user",
+    "status": "active",
+    "email": "wyatt.howard@example.com"
+  },
+  {
+    "id": 3947285,
+    "name": "Aria Ward",
+    "mobile": "9812374059",
+    "userType": "admin",
+    "status": "inactive",
+    "email": "aria.ward@example.com"
+  },
+  {
+    "id": 7824531,
+    "name": "Owen Peterson",
+    "mobile": "7912836450",
+    "userType": "user",
+    "status": "active",
+    "email": "owen.peterson@example.com"
+  },
+  {
+    "id": 2239486,
+    "name": "Lily Gray",
+    "mobile": "8723941860",
+    "userType": "admin",
+    "status": "active",
+    "email": "lily.gray@example.com"
+  },
+  {
+    "id": 9527183,
+    "name": "Gabriel Ramirez",
+    "mobile": "7623984150",
+    "userType": "user",
+    "status": "inactive",
+    "email": "gabriel.ramirez@example.com"
+  },
+  {
+    "id": 4417829,
+    "name": "Nora James",
+    "mobile": "8412753906",
+    "userType": "admin",
+    "status": "active",
+    "email": "nora.james@example.com"
+  },
+  {
+    "id": 6013842,
+    "name": "Julian Watson",
+    "mobile": "9021837451",
+    "userType": "user",
+    "status": "inactive",
+    "email": "julian.watson@example.com"
+  },
+  {
+    "id": 8931742,
+    "name": "Hazel Brooks",
+    "mobile": "8612397405",
+    "userType": "admin",
+    "status": "active",
+    "email": "hazel.brooks@example.com"
+  },
+  {
+    "id": 7328146,
+    "name": "Carter Kelly",
+    "mobile": "7981234605",
+    "userType": "user",
+    "status": "active",
+    "email": "carter.kelly@example.com"
+  },
+  {
+    "id": 9027418,
+    "name": "Zoey Sanders",
+    "mobile": "9832147680",
+    "userType": "admin",
+    "status": "inactive",
+    "email": "zoey.sanders@example.com"
+  },
+  {
+    "id": 6781325,
+    "name": "Anthony Price",
+    "mobile": "7912364805",
+    "userType": "user",
+    "status": "inactive",
+    "email": "anthony.price@example.com"
+  },
+  {
+    "id": 3081274,
+    "name": "Penelope Bennett",
+    "mobile": "8612734950",
+    "userType": "admin",
+    "status": "active",
+    "email": "penelope.bennett@example.com"
   }
 ]
