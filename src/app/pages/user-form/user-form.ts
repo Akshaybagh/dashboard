@@ -43,8 +43,10 @@ export class UserForm {
   saveUser(): void {
     if (this.isEdit) {
       this.userService.updateUser(this.user);
+      alert('Updated successfully');
     } else {
       this.userService.addUser(this.user);
+      alert('added successfully');
     }
     this.router.navigate(['/users']);
   }

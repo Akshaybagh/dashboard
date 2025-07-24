@@ -1,12 +1,12 @@
 <app-navbar></app-navbar>
 
-<div class="container mt-4">
-  <h2 class="mb-3">User List</h2>
+<div class="container mt-4 user-list-container">
+  <h2 class="mb-3 user-list-title">Employee Details</h2>
 
-  <table class="table table-bordered table-striped">
-    <thead class="table-dark">
+  <table class="table table-bordered table-striped user-table">
+    <thead class="user-table-header">
       <tr>
-        <th>ID</th>
+        <th>Employee ID</th>
         <th>Name</th>
         <th>Mobile</th>
         <th>User Type</th>
@@ -14,22 +14,22 @@
         <th>Actions</th>
       </tr>
     </thead>
-    <tbody>
-      <tr *ngFor="let user of users()">
-        <td>{{ user.id }}</td>
-        <td>{{ user.name }}</td>
-        <td>{{ user.mobile }}</td>
-        <td>{{ user.userType }}</td>
-        <td>{{ user.status }}</td>
-        <td>
-          <button class="btn btn-sm btn-primary me-2" (click)="editUser(user.id)">Edit</button>
-          <button class="btn btn-sm btn-danger" (click)="deleteUser(user.id)">Delete</button>
+    <tbody class="user-table-body">
+      <tr *ngFor="let user of users()" class="user-table-row">
+        <td class="user-id">{{ user.id }}</td>
+        <td class="user-name">{{ user.name }}</td>
+        <td class="user-mobile">{{ user.mobile }}</td>
+        <td class="user-type">{{ user.userType }}</td>
+        <td class="user-status">{{ user.status }}</td>
+        <td class="user-actions">
+          <button class="btn btn-sm btn-primary me-2 user-edit-btn" (click)="editUser(user.id)">Edit</button>
+          <button class="btn btn-sm btn-danger user-delete-btn" (click)="deleteUser(user.id)">Delete</button>
         </td>
       </tr>
     </tbody>
   </table>
 
-  <div *ngIf="users().length === 0" class="alert alert-info text-center mt-3">
+  <div *ngIf="users().length === 0" class="alert alert-info text-center mt-3 no-users-alert">
     No users found.
   </div>
 </div>

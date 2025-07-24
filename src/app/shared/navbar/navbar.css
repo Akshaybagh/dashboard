@@ -1,0 +1,51 @@
+/* Apply consistent font across the navbar */
+.custom-navbar {
+  background-color: #0056b3 !important; /* Deep Blue */
+  border-radius: 0 !important;
+  padding: 0.5rem 1rem;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+/* Navbar link styles */
+.navbar-nav .nav-link {
+  color: #f0f0f0 !important; /* Light gray text */
+  margin-right: 1rem;
+  transition: color 0.3s ease;
+  font-family: 'Segoe UI', sans-serif;
+  font-size: 16px;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #ffffff !important; /* Bright white on hover */
+  text-decoration: underline;
+}
+
+/* Collapsible menu background on mobile */
+.bg-custom {
+  background-color: #0056b3 !important;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+/* Toggler button (hamburger icon) */
+.navbar-toggler {
+  border-color: #f0f0f0 !important;
+}
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='%23f0f0f0' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(255, 255, 255, 1)' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+/* Logout button styling */
+.btn-outline-danger {
+  color: #ffffff;
+  border-color: #ff4d4d;
+  font-family: 'Segoe UI', sans-serif;
+}
+.btn-outline-danger:hover {
+  background-color: #ff4d4d;
+  color: white;
+}
+
+/* Shadow */
+.custom-navbar.shadow-sm {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1) !important;
+}

@@ -14,8 +14,7 @@ export const routes: Routes = [
     { path: 'home', component: Home },
     { path: 'users', component: UserList },
     { path: 'users/add', component: UserForm, canActivate: [RoleGuard]},
-    { path: 'users/edit/:id', component: UserForm },
-    { path: 'dashboard', component: DashboardComponent }
+    { path: 'users/edit/:id', component: UserForm }
 
 ];
 

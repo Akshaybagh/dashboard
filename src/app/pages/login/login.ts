@@ -1,7 +1,8 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { Auth } from '../../services/auth';
 import { Router, RouterModule } from '@angular/router';
 import { FormsModule } from '@angular/forms';
+import { HttpClient } from '@angular/common/http';
 
 @Component({
   selector: 'app-login',
@@ -9,18 +10,37 @@ import { FormsModule } from '@angular/forms';
   templateUrl: './login.html',
   styleUrls: ['./login.css']  
 })
-export class Login {
+
+export class Login implements OnInit {
   email = '';
   password = '';
-
-  constructor(private authService: Auth, private router: Router) {}
-
-  onLogin() {
-    const success = this.authService.login(this.email, this.password);
-    if (success) {
-      this.router.navigateByUrl('/home');
+  users: any[] = [];
+ 
+  constructor(private http: HttpClient, private auth: Auth, private router: Router) {}
+ 
+  ngOnInit() {
+    this.http.get<any[]>('/users.json').subscribe(data => {
+      this.users = data;
+    });
+  }
+ 
+  login() {
+    const user = this.users.find(
+      u => u.email?.toLowerCase() === this.email.trim().toLowerCase() && u.status === 'active'
+    );
+ 
+    if (!user) {
+      alert('User not found or inactive');
+      return;
+    }
+ 
+    if (this.password === 'pass') {
+      const success = this.auth.login(this.email, this.password, user.userType);
+      if (success) {
+        this.router.navigate(['/home']);
+      }
     } else {
-      alert('Invalid credentials');
+      alert('Incorrect password');
     }
   }
 }

@@ -9,11 +9,12 @@ export class Auth {
 
   constructor(private router: Router) {}
 
-  login(email: string, password: string): boolean {
+  login(email: string, password: string, userType: string): boolean {
     if (password === 'pass') {
       this.isLoggedInStatus = true;
       localStorage.setItem('isLoggedIn', 'true');
       localStorage.setItem('email', email);
+      localStorage.setItem('userType', userType);
       return true;
     }
     return false;
@@ -22,10 +23,16 @@ export class Auth {
   logout(): void {
     this.isLoggedInStatus = false;
     localStorage.removeItem('isLoggedIn');
+    localStorage.removeItem('email');
+    localStorage.removeItem('userType');
     this.router.navigateByUrl('/login');
   }
 
   isLoggedIn(): boolean {
     return localStorage.getItem('isLoggedIn') === 'true';
+  }
+
+  getUserType(): string {
+    return localStorage.getItem('userType') || '';
   }
 }

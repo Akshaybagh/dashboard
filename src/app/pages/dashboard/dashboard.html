@@ -1,9 +1,42 @@
 <app-navbar></app-navbar>
+<div class="dashboard-container"> 
+<div class="row align-items-end mt-3 mb-2">
+  <div class="col-md-3">
+    <label class="form-label mb-1 custom-label">Month</label>
+    <select class="form-select form-select-sm" [(ngModel)]="selectedMonth" (change)="applyFilters()">
+      <option value="">All</option>
+      <option *ngFor="let m of months" [value]="m.value">{{ m.name }}</option>
+    </select>
+  </div>
+  <div class="col-md-3">
+    <label class="form-label mb-1 custom-label">Year</label>
+    <select class="form-select form-select-sm" [(ngModel)]="selectedYear" (change)="applyFilters()">
+      <option value="">All</option>
+      <option *ngFor="let y of years" [value]="y">{{ y }}</option>
+    </select>
+  </div>
+  <div class="col-md-3">
+    <label class="form-label mb-1 custom-label">Source</label>
+    <select class="form-select form-select-sm" [(ngModel)]="selectedSource" (change)="applyFilters()">
+      <option value="">All</option>
+      <option *ngFor="let s of sources" [value]="s">{{ s }}</option>
+    </select>
+  </div>
+  <div class="col-md-3">
+    <label class="form-label mb-1 custom-label">Location</label>
+    <select class="form-select form-select-sm" [(ngModel)]="selectedLocation" (change)="applyFilters()">
+      <option value="">All</option>
+      <option *ngFor="let l of locations" [value]="l">{{ l }}</option>
+    </select>
+  </div>
 
-<div class="container mt-4">
-  <!-- Row: Pie and Line Charts -->
+  <div class="col-md-12 text-end mt-2">
+    <button class="btn btn-sm btn-secondary" (click)="resetFilters()">Reset Filters</button>
+  </div>
+</div>
+
+  
   <div class="row g-4">
-    <!-- Pie Chart -->
     <div class="col-md-6">
       <div class="card h-100">
         <div class="card-body">
@@ -18,8 +51,6 @@
         </div>
       </div>
     </div>
-
-    <!-- Line Chart -->
     <div class="col-md-6">
       <div class="card h-100">
         <div class="card-body">
@@ -35,8 +66,6 @@
       </div>
     </div>
   </div>
-
-  <!-- Row: Bar Chart -->
   <div class="row mt-4">
     <div class="col-12">
       <div class="card h-100">
@@ -54,6 +83,4 @@
     </div>
   </div>
 </div>
-
 <router-outlet></router-outlet>
-

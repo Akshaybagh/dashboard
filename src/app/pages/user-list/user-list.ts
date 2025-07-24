@@ -54,11 +54,11 @@ export class UserList {
   private userService = inject(UserService);
   private router = inject(Router);
 
-  users = signal<User[]>([]); // signal of users
+  users = signal<User[]>([]); 
 
   ngOnInit(): void {
     this.userService.getUsers().subscribe(data => {
-      this.users.set(data); // update signal with fetched users
+      this.users.set(data); 
     });
   }
 
@@ -67,7 +67,8 @@ export class UserList {
   }
 
   deleteUser(id: number): void {
-    this.userService.deleteUser(id); // modifies local in-memory array
-    this.users.set(this.userService.getLocalUsers()); // refresh list
+    this.userService.deleteUser(id); 
+    this.users.set(this.userService.getLocalUsers()); 
+    alert('Record deleted successfully');
   }
 }
