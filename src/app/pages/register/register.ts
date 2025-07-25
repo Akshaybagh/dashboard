@@ -16,7 +16,7 @@ export class Register {
   constructor(private router: Router) {}
 
   registerUser() {
-    alert('Registration successful (dummy)');
+    alert('Registration successful');
     this.router.navigateByUrl('/login');
   }
 }

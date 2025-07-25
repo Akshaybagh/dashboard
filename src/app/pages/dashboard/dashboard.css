@@ -2,7 +2,7 @@
   width: 100% !important;
   height: 100% !important;
 }
-/* dashboard.css */
+
 .form-label {
   font-size: 0.85rem;
   margin-bottom: 2px;
@@ -12,14 +12,14 @@ select.form-select-sm {
   padding: 0.25rem 0.5rem;
 }
 .custom-label {
-  font-size: 1.1rem;   /* Increased font size */
+  font-size: 1.1rem;  
   font-weight: 500;
   color: #333;
   margin-bottom: 4px;
   display: inline-block;
 }
 .dashboard-container {
-  margin: 24px; /* Adds margin on all sides */
+  margin: 24px; 
 }
 
 

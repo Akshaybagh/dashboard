@@ -55,8 +55,12 @@ export class UserList {
   private router = inject(Router);
 
   users = signal<User[]>([]); 
-
+  isLoggedIn = false;
   ngOnInit(): void {
+     this.isLoggedIn = localStorage.getItem('isLoggedIn') === 'true' ? true : false;
+    if(!this.isLoggedIn){
+      this.router.navigate(['/login']);
+    }
     this.userService.getUsers().subscribe(data => {
       this.users.set(data); 
     });

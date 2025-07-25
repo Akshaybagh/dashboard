@@ -34,7 +34,7 @@ import { Component, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { HttpClient } from '@angular/common/http';
 import { Navbar } from '../../shared/navbar/navbar';
-import { RouterModule } from '@angular/router';
+import { Router, RouterModule } from '@angular/router';
 import { BaseChartDirective } from 'ng2-charts';
 import { ChartType, ChartData, ChartOptions } from 'chart.js';
 import { FormsModule } from '@angular/forms';
@@ -57,7 +57,6 @@ export class DashboardComponent implements OnInit {
   data: Consumption[] = [];
   filteredData: Consumption[] = [];
 
-  // Dropdown options
   months = [
     { name: 'January', value: '01' }, { name: 'February', value: '02' }, { name: 'March', value: '03' },
     { name: 'April', value: '04' }, { name: 'May', value: '05' }, { name: 'June', value: '06' },
@@ -68,13 +67,12 @@ export class DashboardComponent implements OnInit {
   sources: string[] = [];
   locations: string[] = [];
 
-  // Selected filters
+  
   selectedMonth = '';
   selectedYear = '';
   selectedSource = '';
   selectedLocation = '';
 
-  // Chart data
   sourceDistributionData!: ChartData<'pie'>;
   monthlyTrendData!: ChartData<'line'>;
   locationWiseData!: ChartData<'bar'>;
@@ -88,9 +86,13 @@ export class DashboardComponent implements OnInit {
     }
   };
 
-  constructor(private http: HttpClient) {}
-
+  constructor(private http: HttpClient,private router:Router) {}
+  isLoggedIn = false;
   ngOnInit(): void {
+     this.isLoggedIn = localStorage.getItem('isLoggedIn') === 'true' ? true : false;
+    if(!this.isLoggedIn){
+      this.router.navigate(['/login']);
+    }
     this.http.get<Consumption[]>('data.json').subscribe(res => {
       this.data = res;
       this.generateFilterOptions();

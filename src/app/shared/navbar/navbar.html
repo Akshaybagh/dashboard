@@ -22,7 +22,7 @@
         <li class="nav-item">
           <a class="nav-link" routerLink="/reports">Report</a>
         </li>
-        <li class="nav-item">
+        <li class="nav-item" *ngIf="userType === 'admin'">
           <a class="nav-link" routerLink="/users/add">Create User</a>
         </li>
       </ul>

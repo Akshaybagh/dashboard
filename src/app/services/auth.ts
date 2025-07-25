@@ -22,7 +22,7 @@ export class Auth {
 
   logout(): void {
     this.isLoggedInStatus = false;
-    localStorage.removeItem('isLoggedIn');
+      localStorage.setItem('isLoggedIn', 'false');
     localStorage.removeItem('email');
     localStorage.removeItem('userType');
     this.router.navigateByUrl('/login');

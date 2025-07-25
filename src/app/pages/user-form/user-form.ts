@@ -22,7 +22,7 @@ export class UserForm {
   };
 
   isEdit = false;
-
+  isLoggedIn = false;
   constructor(
     private route: ActivatedRoute,
     private router: Router,
@@ -30,6 +30,10 @@ export class UserForm {
   ) {}
 
   ngOnInit(): void {
+       this.isLoggedIn = localStorage.getItem('isLoggedIn') === 'true' ? true : false;
+    if(!this.isLoggedIn){
+      this.router.navigate(['/login']);
+    }
     const id = Number(this.route.snapshot.paramMap.get('id'));
     if (id) {
       this.isEdit = true;
