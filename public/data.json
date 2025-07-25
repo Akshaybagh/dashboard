@@ -48,5 +48,7 @@
   { "id": 47, "amount": 4900, "date": "2025-08-16", "source": "Electricity", "location": "Pune" },
   { "id": 48, "amount": 6400, "date": "2025-08-19", "source": "Water", "location": "Ahmedabad" },
   { "id": 49, "amount": 7100, "date": "2025-08-22", "source": "Gas", "location": "Surat" },
-  { "id": 50, "amount": 4700, "date": "2025-08-25", "source": "Electricity", "location": "Jaipur" }
+  { "id": 50, "amount": 4700, "date": "2025-08-25", "source": "Electricity", "location": "Bhubaneswar" },
+  { "id": 50, "amount": 4700, "date": "2025-08-25", "source": "Gas", "location": "Bhubaneswar" },
+  { "id": 50, "amount": 4700, "date": "2025-08-25", "source": "Water", "location": "Bhubaneswar" }
 ]
